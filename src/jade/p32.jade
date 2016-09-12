@@ -1,0 +1,24 @@
+extends _layout
+
+block title
+	title talon-mob
+
+block content
+	.out
+		+aside('hasBuyBtn')
+		.holder
+			include _menu
+			//32mm
+			section.section(data-page="32")
+				.section__intro(style="background-image: url('img/28.png')")
+					h4.orange TRAIL /
+					.section__size
+						span.section__numb 32
+							span.section__mm mm
+					.section__track(role="img")
+					.section__buttons
+						button.section__left.js-section-left.is-active
+						button.section__right.js-section-right
+				.section__content
+					h4 #[span.slash /] RACE COURSE AND SHALLOW SNOW DRIVING
+					p The track holds the road well, but it will also get through shallow snow. The track pattern is combined, featuring grouser blocks of a different height, which operate under various load types. The snowmobile will not lose its response under difficult situations. The track is suitable for both extreme driving and aggressive running on a traffic-compacted race court and a moderate thickness snow cover.

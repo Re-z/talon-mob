@@ -1,0 +1,38 @@
+extends _layout
+
+block title
+	title talon-mob
+
+block content
+	.out
+		+aside
+		.holder
+			include _menu
+			section.main(data-page="series")
+				.main__intro(style="background-image: url('img/main-intro.png')")
+					a(href="").logo
+					.main__intro-titles
+						h3 TALON SERIES ARE SPORTING TRUCKS DESIGNED FOR FOREIGN SNOWMOBILE
+						p.main__subtitle TRACKS BY RIDERS 4 RIDERS
+					p.text Those are for driving on every type of snow: from a traffic-compacted race course to wild mountain slopes.
+					ul.main__intro-list
+						li SKI DOO
+						li ARCTIC CAT
+						li BRP
+						li POLARIS
+						li YAMAHA
+				.main__outro(style="background-image: url('img/main-outro.png')")
+					.main__outro-titles
+						h3 TALON SERIES CONSISTS OF SIX MODELS
+						p.main__subtitle TRACKS BY RIDERS 4 RIDERS
+					p.text A key rule: the higher the grouser, the better the performance on thick snow. However, it is important not to overdo — there is an optimal grouser height for different types of snow and driving styles.
+					p.main__text-small #[strong WT(wide track):]
+						br
+						| model is a wide track designed for utility snowmobiles.
+					p.main__text-big The higher the grouser, the better the performance on thick and loose snow.
+					p.text However, the grouser can be chosen based on the snowmobile operation conditions and driving style preferences.
+					ul
+						li LENGTH
+						li WIDTH
+						li PITCH
+

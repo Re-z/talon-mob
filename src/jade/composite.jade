@@ -1,0 +1,16 @@
+extends _layout
+
+block title
+	title talon-mob
+
+block content
+	.out
+		+aside
+		.holder
+			include _menu
+			section.composite(data-page="composite")
+				.composite__intro(style="background-image: url('img/composite1.png')")
+					button.composite-btn
+						span
+					h3 THEY HAVE CHOSEN THE TALON TRACKS FROM #[span.orange #COMPOSITTRACKS]
+				+picBlocks

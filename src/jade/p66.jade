@@ -1,0 +1,33 @@
+extends _layout
+
+block title
+	title talon-mob
+
+block content
+	.out
+		+aside('hasBuyBtn')
+		.holder
+			include _menu
+			//66
+			section.section(data-page="66")
+				.section__intro(style="background-image: url('img/45.png')")
+					h4.orange MOUNTAIN /
+					.section__size
+						span.section__numb 66 #[sup , 6]
+							span.section__mm mm
+					.section__track(role="img")
+					.section__buttons
+						button.section__left.js-section-left.is-active
+						button.section__right.js-section-right
+				.section__content.section__content_padding
+					h4 #[span.slash /]  MOUNTAIN AND PUFFED SNOW DRIVING
+					button.read-more.section__read-more.js-content-more READ MORE
+					p This is a tough mountain track with flexible central grousers designed as spades that push the snowmobile out of snow. The track profile is designed for sharp upgrades and downgrades as well as traverse movements. The snowmobile is not climbing quickly the slope, but is also controlled well and maintains the driving precision. Therefore, the track is most liked by Scandinavian sportsmen such as fans of boondocking, bench jumping, and puffed snow racing. If you are going to conquer mountains, then now you know what to do.
+					.recall.js-recall
+						span.arrows.recall__arrows »
+						p WHEN I HAD INSTALLED A TALON 45 TRACK ON MY 137 SUMMIT, I WAS INITIALLY SURPRISED VERY MUCH, HOW WELL IT WAS MADE. THEN THE SNOWMOBILE MANEUVERABILITY IS JUST AT A HEIGHT, IT IS 2 CM LESS THAN THE STANDARD ONE, AND THIS EXCELLENT GROUSER PERMITTED ME TO DRIVE NOT ONLY ON RIGID SNOW BUT ON LOOSE SNOW AS WELL. I DID NOT FEEL THAT I WOULD STICK IN IT; THE GROUSER ROUGHNESS ON A HARD ROAD PROVIDED THE SNOWMOBILE WITH HARD AND SHARP GRIP, THE ACCELERATION WAS VERY QUICK. I FELT ALSO THE ORIGINAL GROUSER PATTERN, THE SNOWMOBILE MADE EVERY MANEUVER THAT WOULD COME TO MY HEAD.
+						.recall__auth
+							img(src="img/author.png")
+							p VLADIMIR SMOLA
+							span @smolaxp800r
+				+picBlocks

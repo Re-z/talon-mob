@@ -1,0 +1,607 @@
++font('helv', HelveticaNeueCyr-Bold)
++font('brutal', BrutalType-Bold)
+
+.out
+	+clr
+
+.aside
+	width: 22% //75px
+	padding-top: 20px
+	text-align: center
+	float: left
+	&__list
+		padding: 20px 0
+		//padding: 0 35px
+		border-bottom: 1px solid #F8F8F8
+
+		&:last-of-type
+			border-bottom: none
+		&_buy
+			background: $orange
+			padding: 40px 0
+		& li
+			+helv
+
+			&:last-of-type
+				margin-bottom: 0
+
+		& a
+			padding: 10px
+			text-decoration: none
+			font-size: 12px
+			color: black
+			transform: rotate(90deg)
+			display: inline-block
+	&__list-wt
+		margin-bottom: 10px
+
+.holder
+	float: right
+	width: 78%
+	position: relative
+
+.main
+	&__intro
+		//background: url("../img/main-intro.png") center center no-repeat, rgba(9, 9, 9, 0.7)
+		background-position: 20% center
+		background-repeat: no-repeat
+		background-color: rgba(9, 9, 9, 0.7)
+		background-size: cover
+		height: 944px
+		padding: 30px 18% 0 18% //50px
+		+r(374)
+			padding: 30px 8% 0 8% //50px
+
+	&__intro-titles
+		margin-top: 310px
+		margin-bottom: 120px
+
+
+	&__subtitle
+		color: #f2f2f2
+		letter-spacing: 0.2px
+		line-height: 30px
+		text-transform: uppercase
+		margin-top: 15px
+		font-weight: 700
+		font-size: 14px
+
+	&__outro
+		height: 890px
+		background-position: 55% center
+		background-repeat: no-repeat
+		background-color: rgba(9, 9, 9, 0.7)
+		background-size: cover
+		padding: 115px 18% 0 18% //50px
+		+r(374)
+			padding: 115px 8% 0 8% //50px
+
+	&__outro-titles
+		margin-bottom: 55px
+	&__text-small
+		@extend .text
+		font-size: 12px
+		line-height: 18px
+		margin-top: 30px
+	&__text-big
+		@extend .text
+		font-size: 16px
+		margin-top: 50px
+		margin-bottom: 20px
+		font-weight: 700
+	& ul
+		margin-top: 20px
+		& li
+			@extend .text
+			line-height: initial
+			margin-bottom: 15px
+			font-weight: 700
+			&:last-of-type
+				margin-bottom: 0
+
+.menu
+	display: none
+	padding: 30px 18% 54px 18% //18%
+	position: absolute
+	width: 100%
+	right: 0
+	top: 0
+	bottom: 0
+	z-index: 10
+	height: 100%
+	+r(374)
+		padding: 30px 8% 54px 8% //18%
+	&__overlay
+		position: fixed
+		width: 78%
+		right: 0
+		top: 0
+		bottom: 0
+		z-index: -1
+		background-color: rgba(48, 46, 45, .9)
+
+
+	& .select
+		width: 65px
+		height: 31px
+		line-height: 31px
+		background: url("../img/lang-bg.svg") center center no-repeat
+		position: absolute
+		right: 8%
+		top: 32px
+		z-index: 1
+		text-align: center
+		text-transform: uppercase
+		font-size: 12px
+		color: #302a25
+		font-weight: 700
+		font-style: italic
+		padding-right: 5px
+		&:after
+			content: ''
+			width: 6px
+			height: 7px
+			background: url("../img/arr-down.svg") center center no-repeat
+			z-index: -1
+			display: inline-block
+			position: absolute
+			right: 10px
+			top: 10px
+		& li
+			color: white
+	&__nav
+		margin-top: 215px
+		margin-bottom: 78px
+		& li
+			margin-bottom: 28px
+			&:last-of-type
+				margin-bottom: 0
+		& a
+			color: #fdfdfd
+			font-weight: 700
+			//+
+			font-size: 25px
+			letter-spacing: -0.25px
+			line-height: 28px
+			text-decoration: none
+.follow
+	+clr
+	& span
+		float: left
+		opacity: 0.5
+		color: white
+		font-weight: 400
+		letter-spacing: 0.17px
+		line-height: 30px
+		text-transform: uppercase
+	&__icons
+		float: right
+		line-height: 30px
+	&__fb
+		margin-right: 22px
+		font-size: 20px
+		opacity: .5
+		color: white
+		vertical-align: middle
+		text-decoration: none
+
+	&__inst
+		@extend .follow__fb
+		margin-right: 0
+
+.composite
+	&__intro
+		//background: url("../img/composite1.png") center center no-repeat
+		//background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+		background-color: rgba(9, 9, 9, 0.7)
+		background-size: cover
+		padding: 30px 18% 156px 18%
+		+r(374)
+			padding: 30px 8% 156px 8%
+
+
+	& h3
+		margin-top: 68px
+
+.also
+	background-color: #2e2e2c
+	padding: 100px 18% 31px 18%
+	+r(374)
+		padding: 100px 8% 31px 8%
+
+	&__text
+		font-size: 16px
+	&__hashtag
+		margin-top: 33px
+
+.pic-block
+	height: 375px
+	position: relative
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	display: block
+	transition: 1s
+	&.is-active
+		opacity: .8
+
+
+	&__text
+		font-size: 16px
+		color: $orange
+		position: absolute
+		bottom: 30px
+		left: 18%
+		+r(374)
+			left: 8%
+	&_2
+		background-size: cover
+		height: 230px
+	&_3
+		background-size: cover
+		height: 230px
+	&_4
+		background-size: cover
+		height: 300px
+
+
+
+
+.composite-btn
+	width: 152px
+	height: 33px
+	line-height: 33px
+	background: url("../img/composit-btn.svg") center center no-repeat
+	text-align: center
+	position: relative
+	& span
+		display: inline-block
+		width: 80px
+		height: 8px
+		background: url("../img/composit.svg") center center no-repeat
+		&:after
+			display: block
+			content: ''
+			width: 6px
+			height: 7px
+			background: url("../img/arr-down.svg") center center no-repeat
+			position: absolute
+			right: 20px
+			top: 13px
+			transform: rotate(-90deg)
+
+
+
+.hashtag
+	+clr
+	&__inst
+		float: left
+		font-size: 20px
+		color: $orange
+		margin-top: 2px
+	span
+		color: $orange
+		font-size: 14px
+		line-height: 25px
+		float: right
+
+
+
+.orange
+	color: $orange
+
+.section
+	&__intro
+		padding: 30px 0 0 18%
+		background-repeat: no-repeat
+		background-position: right top
+		background-size: cover
+		height: 376px //414px
+		position: relative
+		+r(374)
+			padding: 30px 0 0 8%
+	&__size
+		+brutal
+		margin-top: 70px
+		color: $orange
+		//font-weight: bold
+		& sup
+			font-size: 50px
+			position: absolute
+			top: 20px
+			right: -40px
+
+	&__numb
+		font-size: 129px
+		letter-spacing: -4.5px
+		position: relative
+		text-transform: uppercase
+	&__mm
+		background: url("../img/mm-bg.svg") center center no-repeat
+		text-transform: uppercase
+		width: 47px
+		height: 27px
+		line-height: 27px
+		letter-spacing: 0
+		text-align: center
+		font-size: 14px
+		font-style: italic
+		position: absolute
+		bottom: 37px
+		right: -60px
+		+robco
+
+	&__track
+		background: url("../img/track.png") center center repeat-x
+		position: absolute
+		bottom: 0
+		left: 0
+		height: 95px
+		width: 100%
+		transition: 1s
+	&__buttons
+		position: absolute
+		bottom: 35px
+		left: 18%
+		+r(374)
+			left: 8%
+	&__left,&__right
+		width: 10px
+		height: 10px
+		border-radius: 100%
+		background: white
+		&.is-active
+			background: $orange
+	&__left
+		margin-right: 15px
+	&__content
+		background-color: #2e2e2c
+		padding: 70px 13% 75px 18%
+		+r(374)
+			padding: 70px 8% 75px 8%
+		&_padding
+			padding-bottom: 35px
+		& h4
+			//white-space: pre
+			margin-bottom: 35px
+		& p
+			@extend .text
+			@extend .orange
+			line-height: 22px
+	&__read-more
+		margin-bottom: 35px
+
+
+.recall
+	margin-top: 33px
+	display: none
+	&__arrows
+		margin-bottom: 50px
+		display: block
+		font-size: 60px
+		letter-spacing: -1.8px
+		line-height: 71px
+
+
+
+	& P
+		text-transform: uppercase
+		color: $orange
+		font-size: 20px
+		letter-spacing: -0.5px
+		line-height: 30px
+		font-style: italic
+		font-weight: 700
+	&__auth
+		margin-top: 50px
+		position: relative
+		padding-left: 50px
+		& img
+			width: 38px
+			height: 39px
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -20px
+		& p
+			font-size: 14px
+			color: #ff5110
+			letter-spacing: 0.2px
+			font-style: normal
+		& span
+			color: #ff5110
+			letter-spacing: 0.2px
+			font-size: 12px
+
+
+.read-more
+	display: inline-block
+	width: 85px
+	height: 26px
+	line-height: 26px
+	background: url("../img/read-more.svg") center center no-repeat
+	background-size: cover
+	text-transform: uppercase
+	color: #302a25
+	font-size: 11px
+	position: relative
+	+robco
+	font-weight: 700
+	font-style: italic
+
+	&:after
+		position: absolute
+		width: 12px
+		height: 11px
+		background: url("../img/plus.svg") center center no-repeat
+		right: -20px
+		top: 0
+		display: block
+		content: ''
+
+.choose
+	//display: none
+	//height: 667px
+	padding: 30px 10% 0 18%
+	+r(374)
+		padding: 30px 8% 0 8%
+
+	&__overlay
+		position: fixed
+		width: 78%
+		top: 0
+		right: 0
+		bottom: 0
+		//background: url('../img/main-intro.png') center center no-repeat, rgba(9, 9, 9, .7)
+		background-position: center center
+		background-repeat: no-repeat
+		background-color: rgba(9, 9, 9, 0.7)
+		background-size: cover
+		z-index: -1
+
+	&__composite-btn
+		margin-bottom: 70px
+	&__subtitle
+		margin-top: 222px
+	&__btn-down
+		margin-top: 15px
+
+.choice
+	//padding: 30px 18% 54px 18%
+	position: absolute
+	right: 0
+	top: 0
+	left: 0
+	bottom: 0
+	height: 667px //
+	display: none
+	&__overlay
+		position: fixed
+		right: 0
+		top: 0
+		bottom: 0
+		background-color: rgba(48, 46, 45, .9)
+		width: 78%
+
+	&__cross
+		position: absolute
+		top: 30px
+		left: 18%
+		z-index: 1
+		+r(374)
+			left: 8%
+
+	&__content
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 100%
+		&.is-opened
+			position: static
+			padding-top: 130px
+			transform: translateY(0)
+
+
+	&__brand
+		padding-left: 18%
+		position: relative
+		padding-bottom: 50px
+		padding-right: 18%
+
+		+r(374)
+			padding-left: 8%
+		&:after
+			display: block
+			content: ''
+			background-image: linear-gradient(180deg, #222 0%, transparent 100%)
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 30px
+	&__model
+		margin-top: 15px
+		padding-left: 18%
+		padding-right: 18%
+		+r(374)
+			padding-left: 8%
+
+
+	&__front
+
+		font-weight: 700
+		display: inline-block
+	&__option
+		color: $orange
+		font-size: 26px
+		line-height: 25px
+		position: relative
+		padding-right: 15px
+		&:after
+			display: inline-block
+			content: ''
+			+arr(10,10, $orange, b)
+			margin-left: 10px
+			vertical-align: super
+
+
+		&.is-active
+			color: #f2f2f2
+	&__list
+		display: none
+		&.is-visible
+			display: inline-block
+			padding-bottom: 20px
+
+		li
+
+			font-size: 26px
+			color: $orange
+			margin-bottom: 30px
+			line-height: 22px
+			font-weight: 700
+			&:last-of-type
+				margin-bottom: 0
+			&.is-active
+				color: #f2f2f2
+	&__list-choose
+		@extend .text
+		margin-top: 5px
+
+
+.js-model-input
+	display: none
+.js-brand-input
+	display: none
+
+.find-btn
+	+robco
+	font-weight: 700
+	width: 124px
+	height: 33px
+	line-height: 33px
+	text-align: center
+	background: url("../img/find-btn.svg")
+	background-size: cover
+	color: #090909
+	font-size: 10px
+	letter-spacing: 0.78px
+	margin-top: 20px
+	font-style: italic
+	&:after
+		display: inline-block
+		content: ''
+		background: url("../img/arr-down.svg") center center no-repeat
+		width: 9px
+		height: 8px
+		background-size: cover
+		transform: rotate(-90deg)
+		margin-left: 10px
+
+
+
+
+
+

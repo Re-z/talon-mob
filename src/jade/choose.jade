@@ -1,0 +1,45 @@
+extends _layout
+
+block title
+	title talon-mob
+
+block content
+	.out
+		+aside
+		.holder
+			include _menu
+			//choose
+			section.choose(data-page="choose")
+				.choose__overlay(style="background-image: url('img/main-intro.png')")
+				button.composite-btn.choose__composite-btn
+					span
+				h3 CHOOSE THE #[span.orange TALON TRACK ]FOR YOUR SNOWMOBILE
+				h4.orange.choose__subtitle YOUR
+					br
+					| SNOWMOBILE
+				button.btn-down.choose__btn-down.js-choice-trig
+
+			//choice
+			section.choice.js-choice
+				.choice__overlay.js-choice-overlay
+				button.cross.choice__cross.js-choice-close
+				.choice__content
+					.choice__brand
+						input(type="text" data-value="").js-brand-input
+						.choice__front.js-brand-target
+							span.choice__option.js-brand-value Brand
+							p.js-brand-text.choice__list-choose CHOOSE
+						ul.choice__list.js-brand-list
+							-var brands = ['Arctic Cat', 'BRP', 'Lynx', 'Yamaha', 'Polaris']
+							each item in brands
+								li=item
+
+					.choice__model
+						input(type="text" data-value="").js-model-input
+						.choice__front.js-model-target
+							span.choice__option.js-model-value Model
+							p.js-model-text.choice__list-choose CHOOSE
+						ul.choice__list.js-model-list
+							- var models = ['Thundercat', 'Thundercat Mountain Cat', 'Triple Touring', 'Wildcat', 'Wildcat EFI Touring', 'Wildcat Mountain Cat', 'XF', 'XF HC', 'XF  Limiited, LXR, Sno Pro', 'Z', 'Z1 & Z1 Turbo', 'Z1 LXR', 'Z1 Sno Pro', 'Z1 Turbo EXT', 'Z1 Turbo LXR', 'Z1 Turbo LXR & Sno Pro LXR', 'Z1 Turbo Sno Pro', 'ZL', 'ZR', 'ZRT', 'ZR LXR 500']
+							each item in models
+								li=item

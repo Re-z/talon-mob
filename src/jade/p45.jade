@@ -1,0 +1,33 @@
+extends _layout
+
+block title
+	title talon-mob
+
+block content
+	.out
+		+aside('hasBuyBtn')
+		.holder
+			include _menu
+			//45mm
+			section.section(data-page="45")
+				.section__intro(style="background-image: url('img/45.png')")
+					h4.orange CROSS COUNTRY /
+					.section__size
+						span.section__numb 45
+							span.section__mm mm
+					.section__track(role="img")
+					.section__buttons
+						button.section__left.js-section-left.is-active
+						button.section__right.js-section-right
+				.section__content.section__content_padding
+					h4 #[span.slash /] OFF-ROAD DRIVING
+					button.read-more.section__read-more.js-content-more READ MORE
+					p The track characteristics are close to those of Talon 38 — side teeth are reinforced, the grouser pattern is aggressive. And it means quick acceleration and maneuverability in sharp turns. The higher the grouser, the track is perfect for off-road racing.
+					.recall.js-recall
+						span.arrows.recall__arrows »
+						p WHEN I HAD INSTALLED A TALON 45 TRACK ON MY 137 SUMMIT, I WAS INITIALLY SURPRISED VERY MUCH, HOW WELL IT WAS MADE. THEN THE SNOWMOBILE MANEUVERABILITY IS JUST AT A HEIGHT, IT IS 2 CM LESS THAN THE STANDARD ONE, AND THIS EXCELLENT GROUSER PERMITTED ME TO DRIVE NOT ONLY ON RIGID SNOW BUT ON LOOSE SNOW AS WELL. I DID NOT FEEL THAT I WOULD STICK IN IT; THE GROUSER ROUGHNESS ON A HARD ROAD PROVIDED THE SNOWMOBILE WITH HARD AND SHARP GRIP, THE ACCELERATION WAS VERY QUICK. I FELT ALSO THE ORIGINAL GROUSER PATTERN, THE SNOWMOBILE MADE EVERY MANEUVER THAT WOULD COME TO MY HEAD.
+						.recall__auth
+							img(src="img/author.png")
+							p VLADIMIR SMOLA
+							span @smolaxp800r
+				+picBlocks

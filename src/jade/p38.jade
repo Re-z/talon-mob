@@ -1,0 +1,24 @@
+extends _layout
+
+block title
+	title talon-mob
+
+block content
+	.out
+		+aside('hasBuyBtn')
+		.holder
+			include _menu
+			//38
+			section.section(data-page="38")
+				.section__intro(style="background-image: url('img/28.png')")
+					h4.orange CROSS COUNTRY /
+					.section__size
+						span.section__numb 38
+							span.section__mm mm
+					.section__track(role="img")
+					.section__buttons
+						button.section__left.js-section-left.is-active
+						button.section__right.js-section-right
+				.section__content
+					h4 #[span.slash /] OFF-ROAD DRIVING
+					p This is a maneuverable track offering reinforced grouser edges to improve the surface traction. The snowmobile with such track starts well, enters turns quickly, and permits to “veer”. The grouser pattern is aggressive — the snowmobile maintains stability under a hard driving style.

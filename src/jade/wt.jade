@@ -1,0 +1,24 @@
+extends _layout
+
+block title
+	title talon-mob
+
+block content
+	.out
+		+aside('hasBuyBtn')
+		.holder
+			include _menu
+			//wt
+			section.section(data-page="wt")
+				.section__intro(style="background-image: url('img/28.png')")
+					h4.orange  UNLIMITED /
+					.section__size
+						span.section__numb wt
+							//span.section__mm mm
+					.section__track(role="img")
+					.section__buttons
+						button.section__left.js-section-left.is-active
+						button.section__right.js-section-right
+				.section__content
+					h4 #[span.slash /] HEAVY DUTY DRIVING
+					p This is a heavy-duty track designed for utility snowmobiles. This is a class of snowmobiles designed for heavy operations, which will start under a severe frost and haul a heavy sledge. The speed, comfort, and acceleration are of minor importance. Talon WT tracks are installed on workhorses to have better surface traction and puffed snow driving. The track withstands well hard operation under severe conditions.

@@ -1,0 +1,24 @@
+extends _layout
+
+block title
+	title talon-mob
+
+block content
+	.out
+		+aside('hasBuyBtn')
+		.holder
+			include _menu
+			//28mm
+			section.section(data-page="28")
+				.section__intro(style="background-image: url('img/28.png')")
+					h4.orange TRAIL /
+					.section__size
+						span.section__numb 28
+							span.section__mm mm
+					.section__track(role="img")
+					.section__buttons
+						button.section__left.js-section-left.is-active
+						button.section__right.js-section-right
+				.section__content
+					h4 #[span.slash /] ON-ROAD DRIVING
+					p This is a soft and fast track designed for high-speed driving on traffic-compacted snow referred to as a race course. The speed and swiftness are achieved due to a low and uniform grouser. It is not stripping the crust top, and the snowmobile is running easily and without slingshots. The track rubber is soft, so it holds the road well.
